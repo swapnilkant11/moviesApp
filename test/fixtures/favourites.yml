@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  year: MyString
+  imdbID: MyString
+  poster: MyString
+  remainder_date: 2022-06-21 15:54:41
+
+two:
+  title: MyString
+  year: MyString
+  imdbID: MyString
+  poster: MyString
+  remainder_date: 2022-06-21 15:54:41

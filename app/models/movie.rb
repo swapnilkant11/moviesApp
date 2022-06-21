@@ -7,4 +7,5 @@ class Movie < ApplicationRecord
     validates :imdbID, presence: true
     validates :length_type, presence: true
     validates :poster, presence: true
+    has_many :favourites_user, class_name: 'Favourite', foreign_key: 'movie_id'
 end

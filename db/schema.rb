@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_21_034327) do
+ActiveRecord::Schema.define(version: 2022_06_21_102920) do
+
+  create_table "favourites", force: :cascade do |t|
+    t.string "title"
+    t.string "year"
+    t.string "imdbID"
+    t.string "poster"
+    t.datetime "remainder_date"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id"
+    t.integer "movie_id"
+  end
 
   create_table "models", force: :cascade do |t|
     t.string "email", default: "", null: false

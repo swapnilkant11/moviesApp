@@ -17,7 +17,7 @@ class MoviesController < ApplicationController
   def remove_movie
     @movie = Movie.find(params[:id])
     @movie.destroy
-    render json: "Data deleted successfully!!"
+    remove_movie_response
   end
 
   def set_movies
