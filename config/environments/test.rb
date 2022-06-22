@@ -46,4 +46,7 @@ Rails.application.configure do
 
   # Raises error for missing translations.
   # config.action_view.raise_on_missing_translations = true
+
+  ENV['SLACK_NOTIFIER_WEBHOOK'] = "https://hooks.slack.com/services/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"
+  ENV['SLACK_NOTIFIER_CHANNEL'] = "#moviewatchreminder"
 end

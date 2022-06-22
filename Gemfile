@@ -13,11 +13,23 @@ gem "http"
 #added httparty gem
 gem 'httparty'
 
+#pagination-added
 gem 'api-pagination'
 
+#gem-pagination-limit-added
 gem 'kaminari'
 
+#will-paginate-added
 gem 'will_paginate', '~> 3.3'
+
+#sidekiq-added
+gem 'sidekiq'
+
+#slack-iq added
+gem 'slackiq'
+
+#slack-notifier-added
+gem "slack-notifier"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.0.5'

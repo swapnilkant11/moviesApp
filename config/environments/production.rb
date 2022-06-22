@@ -102,4 +102,7 @@ Rails.application.configure do
   # config.active_record.database_selector = { delay: 2.seconds }
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
+
+  ENV['SLACK_NOTIFIER_WEBHOOK'] = "https://hooks.slack.com/services/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"
+  ENV['SLACK_NOTIFIER_CHANNEL'] = "#moviewatchreminder"
 end

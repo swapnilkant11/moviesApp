@@ -20,7 +20,7 @@ class FavouritesController < ApplicationController
     @year = @movie_id.year
     @imdbID = @movie_id.imdbID
     @poster = @movie_id.poster
-    @favourite = Favourite.create(user_id: current_user.id, movie_id: params[:id], title: @title, year: @year, imdbID: @imdbID, poster: @poster)
+    @favourite = Favourite.create(user_id: current_user.id, movie_id: params[:id], title: @title, year: @year, imdbID: @imdbID, poster: @poster, remainder_date: params[:remainder_date])
     favourite_response(@favourite)
   end
 
@@ -40,6 +40,6 @@ class FavouritesController < ApplicationController
   end
 
   def favourite_params
-    params.permit(:user_id, :movie_id, :title, :year, :imdbID, :poster)
+    params.permit(:user_id, :movie_id, :title, :year, :imdbID, :poster, :remainder_date)
   end
 end
